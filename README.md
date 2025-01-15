@@ -18,10 +18,10 @@ Example:
 
 ```sh
 make tinyconfig \
-  kvm_guest.config
-  virtio-fs.config
-  systemd.config
-  distro.config
+  kvm_guest.config \
+  virtio-fs.config \
+  systemd.config \
+  distro.config \
   storage.config
 ```
 
@@ -34,6 +34,59 @@ make tinyconfig \
 * `storage.config`
 * `numa.config`
 * `ebpf.config`
+* `ebpf-errorinj.config`
+
+```sh
+make tinyconfig \
+  kvm_guest.config \
+  virtio-fs.config \
+  systemd.config \
+  distro.config \
+  storage.config \
+  numa.config \
+  ebpf.config \
+  ebpf-errorinj.config
+```
+
+## Modules-Ready Configuration
+
+* `kvm_guest.config`
+* `virtio-fs.config`
+* `systemd.config`
+* `distro.config`
+* `storage.config`
+* `modules.config`
+
+```sh
+make tinyconfig \
+  kvm_guest.config \
+  virtio-fs.config \
+  systemd.config \
+  distro.config \
+  storage.config \
+  modules.config
+```
+
+## Debug-Ready Configuration
+
+* `kvm_guest.config`
+* `virtio-fs.config`
+* `systemd.config`
+* `distro.config`
+* `storage.config`
+* `vm_debug.config`
+* `gdb.config`
+
+```sh
+make tinyconfig \
+  kvm_guest.config \
+  virtio-fs.config \
+  systemd.config \
+  distro.config \
+  storage.config \
+  vm_debug.config \
+  gdb.config
+```
 
 ## License
 
