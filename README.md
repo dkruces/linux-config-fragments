@@ -88,6 +88,22 @@ make tinyconfig \
   gdb.config
 ```
 
+## Using Merge Config
+
+### Minimal Bootlable Configuration
+
+```sh
+./scripts/kconfig/merge_config.sh \
+-n \
+.config \
+./kernel/configs/64bit.config \
+./kernel/configs/kvm_guest.config \
+./kernel/configs/virtio-fs.config \
+./kernel/configs/systemd.config \
+./kernel/configs/distro.config \
+./kernel/configs/storage.config
+```
+
 ## License
 
 This project is licensed under the GNU General Public License v2.0. See
